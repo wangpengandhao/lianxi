@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../../jQurey/jquery-3.2.1.js"></script>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	html,body{
+		width: 100%;
+		height: 100%
+	}
+	body{
+		overflow: hidden;
+		background: url('img/poke2.jpg') center / cover;
+	}
+	.zhuozi{
+		width: 700px;
+		height: 600px;
+		margin: 0 auto;
+		/* background: skyblue; */
+		position: relative;
+	}
+	.poke{
+		width: 90px;
+		height: 140px;
+		position: absolute;
+		left: 300px;
+		top: 0;
+		background-position: center;
+		background-size: cover;
+		opacity: 0;
+		border-radius: 3px;
+	}
+	.active{
+		box-shadow: 0 0 5px 3px skyblue;
+	}
+	.zhuozi button{
+		width: 70px;
+		height: 50px;
+		position: absolute;
+		left: calc(50% - 35px);
+		font-size: 30px;
+		font-weight: bold;
+		color: #fff;
+		border-radius: 5px;
+		cursor: pointer;
+		border: none;
+		outline: none;
+	}
+	.zhuozi .right{
+		background: skyblue;
+		bottom: 80px;
+	}
+	.zhuozi .left{
+		background: seagreen;
+		bottom: 20px;
+	}
+</style>
+<body>
+	<div class="zhuozi">
+		<button class="right"> &nbsp;&nbsp;〉</button>
+		<button class="left">〈&nbsp;&nbsp; </button>
+	</div>
+</body>
+<script src="poke.js"></script>
+</html>
